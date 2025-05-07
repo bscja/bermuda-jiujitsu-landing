@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bermuda Kids Jiu-Jitsu — Unlock Your Child’s Confidence</title>
+  <meta name="description" content="Try a free Jiu-Jitsu class in Bermuda and help your child build real confidence and discipline. Book a trial today!">
+  <style>
+    body { font-family: Arial, sans-serif; background:#f4f6fa; margin:0; padding:0; }
+    .hero { background:#183152; color:#fff; text-align:center; padding:60px 20px; }
+    .hero h1 { margin:0 0 10px; }
+    .cta-btn { background:#fca311; color:#183152; text-transform:uppercase; font-weight:bold; padding:1em 2em; border:none; border-radius:4px; font-size:1.2em; cursor:pointer; margin-top:20px; }
+    .container { max-width:600px; background:#fff; margin: 40px auto; padding:30px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+    .testimonials { margin:40px 0; }
+    .testimonials blockquote { background:#e9ecef; border-left:5px solid #183152; margin:20px 0; padding:1em; border-radius:6px; }
+    form { display:flex; flex-direction:column; }
+    input, textarea { margin-bottom:12px; padding:12px; border-radius:5px; border:1px solid #bbb; font-size:1em;}
+    label { font-weight:bold; }
+    @media (max-width: 600px) {
+      .container { padding:15px;}
+      .hero { padding:40px 5px;}
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Unlock Your Child’s Confidence</h1>
+    <p>Free Jiu-Jitsu Trial Class for Kids in Bermuda</p>
+    <button class="cta-btn" onclick="document.getElementById('signup').scrollIntoView({behavior:'smooth'})">Book My Free Trial</button>
+  </section>
+  
+  <section class="container">
+    <h2>Give Your Child Skills for Life</h2>
+    <ul>
+      <li>✅ Real confidence & self-discipline</li>
+      <li>✅ Friendly, safe & supportive environment</li>
+      <li>✅ No experience needed – all kids welcome!</li>
+    </ul>
+    
+    <div class="testimonials">
+      <blockquote>
+        “Before starting, my daughter was shy and nervous. After just 3 weeks, she’s more confident than ever!”<br>
+        <strong>- Sarah, Bermuda parent</strong>
+      </blockquote>
+    </div>
+
+    <p>Ready to see the difference? Register below for a free, no-obligation class!</p>
+    
+    <form id="signup" name="signup" method="POST" action="mailto:your@email.com">
+      <label for="parent_name">Your Name</label>
+      <input type="text" id="parent_name" name="parent_name" required>
+      
+      <label for="child_name">Child’s Name & Age</label>
+      <input type="text" id="child_name" name="child_name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone (optional)</label>
+      <input type="text" id="phone" name="phone">
+
+      <label for="message">Anything we should know?</label>
+      <textarea id="message" name="message" rows="3"></textarea>
+      
+      <button class="cta-btn" type="submit">Book Free Trial</button>
+    </form>
+  </section>
+  
+  <section class="container">
+    <h3>FAQ</h3>
+    <strong>Is it safe for beginners?</strong>
+    <p>Absolutely! All instructors are certified, and all kids train at their own pace.</p>
+    <strong>How do I prepare?</strong>
+    <p>Just bring comfy clothes and a water bottle—everything else provided!</p>
+  </section>
+  
+  <footer style="text-align:center; color:#888; padding:30px 0;">
+    &copy; 2024 Bermuda Kids Jiu-Jitsu | WhatsApp: (441) 555-1234
+  </footer>
+
+</body>
+</html>
