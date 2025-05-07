@@ -2,88 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bermuda Jiu Jitsu Landing Page</title>
+  <title>Bermuda Small Circle Jujitsu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; background: #f2f2f2; margin: 0; color: #222;}
-    .container { max-width: 540px; margin: 48px auto; padding: 32px; background: #fff; border-radius: 10px; box-shadow: 0 2px 16px #0002; }
-    h1 { color: #2471A3; text-align: center; }
-    .whatsapp-btn {
-      display: block;
-      width: 100%;
-      padding: 12px 0;
-      margin: 24px 0 32px 0;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      text-align: center;
-      font-size: 1.2em;
-      border-radius: 6px;
-      transition: background .2s;
+    :root {
+      --main-orange: #ff8400;
+      --main-black: #181818;
+      --accent: #fff;
     }
-    .whatsapp-btn:hover { background: #128C7E; }
-    form { display: flex; flex-direction: column; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--main-black);
+      margin: 0;
+      color: var(--accent);
+    }
+    .container {
+      max-width: 500px;
+      margin: 48px auto;
+      padding: 32px 28px 32px 28px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 24px #0003;
+      color: var(--main-black);
+    }
+    h1 {
+      color: var(--main-orange);
+      text-align: center;
+      text-shadow: 1px 2px 0 #0001;
+      margin-bottom: 0.55em;
+      margin-top: 0.2em;
+    }
+    .promo-headline {
+      font-size: 1.6em;
+      font-weight: bold;
+      color: var(--main-black);
+      background: var(--main-orange);
+      padding: 16px 14px;
+      border-radius: 9px 9px 0 0;
+      box-shadow: 0 2px 8px #ff840045;
+      margin-bottom: 1em;
+      text-align: center;
+      line-height: 1.21;
+    }
+    .promo-sub {
+      font-size: 1.12em;
+      text-align: center;
+      margin-bottom: 23px;
+    }
+    .promo-img {
+      display: block;
+      margin: 0 auto 24px auto;
+      border-radius: 12px;
+      max-width: 100%;
+      box-shadow: 0 4px 16px #ff840047;
+      border: 3px solid var(--main-orange);
+    }
+    form {
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
     input, textarea {
-      padding: 10px;
-      margin-bottom: 14px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      padding: 10px 12px;
+      border: 1.9px solid var(--main-orange);
+      border-radius: 6px;
       font-size: 1em;
+      background: #fff7f0;
+      color: var(--main-black);
     }
     button[type="submit"] {
-      padding: 12px;
-      background: #2471A3;
-      color: white;
+      padding: 13px;
+      background: var(--main-orange);
+      color: var(--main-black);
       border: none;
       font-size: 1.1em;
       border-radius: 6px;
       cursor: pointer;
-      transition: background .2s;
+      font-weight: 600;
+      transition: background 0.2s;
+      box-shadow: 0 2px 6px #ff840035;
     }
     button[type="submit"]:hover {
-      background: #165075;
+      background: #cf6100;
+      color: #fff;
     }
     .footer {
-      text-align: center;
+      color: #bbb;
       margin-top: 20px;
-      color: #888;
-      font-size: 0.93em;
+      text-align: center;
+      font-size: 0.95em;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .container { padding: 16px 6vw; }
+      .promo-img { max-width: 95vw;}
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Bermuda Jiu Jitsu</h1>
-    <p>Welcome to the landing page for Bermuda Jiu Jitsu! Contact us for training, seminars, or questions.</p>
-
-    <!-- WhatsApp Contact Button -->
-    <a class="whatsapp-btn" 
-       href="https://wa.me/14415188989" 
-       target="_blank" 
-       rel="noopener">
-      Message us on WhatsApp
-    </a>
+    <h1>Bermuda Small Circle Jujitsu</h1>
+    <div class="promo-headline">
+      5 Costly Mistakes That Could Be Destroying Your Child’s Confidence
+    </div>
+    <div class="promo-sub">
+      Welcome to Bermuda Small Circle Jujitsu, where we build unstoppable confidence in every student.
+      <br><br>
+      Parents: If you'd like <b>our free guide</b> to avoid these mistakes and help your child thrive, simply leave your name and email below and we'll send it to you right away!
+    </div>
+    <!-- Happy Mom & Child Illustration -->
+    <img class="promo-img"
+      src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80"
+      alt="Happy mom with child smiling"
+      width="400"
+      height="267"
+      loading="lazy"
+    />
+    <!-- Or Use AI Image:
+      ![HAPPY_MOM_CHILD](GENERATED_IMAGE_URL_HERE?ar=landscape)
+    -->
 
     <!-- Contact Form -->
     <form action="https://formsubmit.co/bermudajujitsu@hotmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New Bermuda Jiu Jitsu Inquiry!">
       <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Request Free Guide: 5 Mistakes Destroying Child Confidence">
       <input type="hidden" name="_next" value="https://bscja.github.io/bermuda-jiujitsu-landing/thanks.html">
-      
-      <label for="name">Your Name*</label>
-      <input type="text" name="name" id="name" required>
-
+      <label for="parentname">Your Name*</label>
+      <input type="text" id="parentname" name="Parent Name" required placeholder="Your name">
       <label for="email">Email Address*</label>
-      <input type="email" name="email" id="email" required>
-
-      <label for="message">Your Message*</label>
-      <textarea name="message" id="message" rows="5" required></textarea>
-
-      <button type="submit">Send Message</button>
+      <input type="email" id="email" name="Email" required placeholder="you@email.com">
+      <button type="submit">Get The Free Guide</button>
     </form>
+    <div style="margin-top:0.8em;text-align:center;">
+      Or <a href="https://wa.me/14415188989" target="_blank" style="color:#fff;background:#25D366;padding:6px 16px;border-radius:5px;text-decoration:none;display:inline-block;">WhatsApp Us Instantly</a>
+    </div>
   </div>
   <div class="footer">
-    &copy; 2024 Bermuda Jiu Jitsu &bull; Email: bermudajujitsu@hotmail.com
+    &copy; 2024 Bermuda Small Circle Jujitsu &bull;
+    Email: bermudajujitsu@hotmail.com
   </div>
 </body>
 </html>
