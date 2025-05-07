@@ -3,101 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <title>Bermuda Small Circle Jujitsu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Montserrat Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;500;400&display=swap" rel="stylesheet">
   <style>
     :root {
-      --main-orange: #ff8400;
+      --main-red: #E50914;
       --main-black: #181818;
       --accent: #fff;
+      --cta-red: #ff2b2b;
     }
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: 'Montserrat', Arial, sans-serif;
       background: var(--main-black);
       margin: 0;
       color: var(--accent);
     }
     .container {
-      max-width: 500px;
-      margin: 48px auto;
-      padding: 32px 28px 32px 28px;
+      max-width: 520px;
+      margin: 60px auto;
+      padding: 38px 28px 32px 28px;
       background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 2px 24px #0003;
+      border-radius: 18px;
+      box-shadow: 0 10px 36px #85000738, 0 2px 8px #0006;
       color: var(--main-black);
     }
     h1 {
-      color: var(--main-orange);
+      color: var(--main-red);
+      font-size: 2.2em;
       text-align: center;
-      text-shadow: 1px 2px 0 #0001;
-      margin-bottom: 0.55em;
-      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      line-height: 1.06;
     }
     .promo-headline {
-      font-size: 1.6em;
-      font-weight: bold;
+      font-size: 1.45em;
+      font-weight: 700;
       color: var(--main-black);
-      background: var(--main-orange);
-      padding: 16px 14px;
-      border-radius: 9px 9px 0 0;
-      box-shadow: 0 2px 8px #ff840045;
+      background: var(--main-red);
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0 2px 8px #e509144a;
       margin-bottom: 1em;
+      padding: 16px 14px;
       text-align: center;
-      line-height: 1.21;
+      line-height: 1.22;
+      letter-spacing: 0.3px;
     }
     .promo-sub {
-      font-size: 1.12em;
+      font-size: 1.11em;
       text-align: center;
-      margin-bottom: 23px;
+      margin-bottom: 24px;
+      color: #222;
+      font-weight: 500;
     }
     .promo-img {
       display: block;
-      margin: 0 auto 24px auto;
-      border-radius: 12px;
-      max-width: 100%;
-      box-shadow: 0 4px 16px #ff840047;
-      border: 3px solid var(--main-orange);
+      margin: 0 auto 27px auto;
+      border-radius: 15px;
+      border: 3px solid var(--main-red);
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 4px 36px #ff2b2b33;
     }
     form {
       margin-top: 22px;
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 16px;
     }
     input, textarea {
-      padding: 10px 12px;
-      border: 1.9px solid var(--main-orange);
-      border-radius: 6px;
-      font-size: 1em;
-      background: #fff7f0;
+      padding: 12px 14px;
+      border: 2px solid var(--main-red);
+      border-radius: 7px;
+      font-size: 1.04em;
+      background: #fff5f5;
       color: var(--main-black);
+      font-family: inherit;
     }
     button[type="submit"] {
       padding: 13px;
-      background: var(--main-orange);
-      color: var(--main-black);
+      background: var(--cta-red);
+      color: var(--accent);
       border: none;
-      font-size: 1.1em;
-      border-radius: 6px;
+      font-size: 1.19em;
+      border-radius: 8px;
       cursor: pointer;
-      font-weight: 600;
-      transition: background 0.2s;
-      box-shadow: 0 2px 6px #ff840035;
+      font-weight: 800;
+      transition: background 0.2s, color 0.15s;
+      box-shadow: 0 2px 12px #e5091436;
+      letter-spacing: 0.1em;
+      margin-top: 5px;
     }
     button[type="submit"]:hover {
-      background: #cf6100;
+      background: #b90010;
       color: #fff;
     }
-    .footer {
-      color: #bbb;
-      margin-top: 20px;
-      text-align: center;
-      font-size: 0.95em;
+    .cta-whatsapp {
+      display: block;
+      background: #25D366;
+      color: #fff;
+      padding: 10px 14px;
+      margin: 18px auto 0 auto;
+      border-radius: 7px;
+      text-decoration: none;
+      width: fit-content;
+      font-weight: 700;
+      box-shadow: 0 2px 8px #25d36625;
+      transition: background .18s;
+      font-size: 1.09em;
     }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .container { padding: 16px 6vw; }
-      .promo-img { max-width: 95vw;}
+    .cta-whatsapp:hover { background: #128C7E; }
+    .footer {
+      color: #aaa;
+      margin-top: 22px;
+      text-align: center;
+      font-size: 0.97em;
+    }
+    @media (max-width: 680px) {
+      .container { padding: 16px 5vw; }
+      .promo-img { max-width: 95vw; }
     }
   </style>
 </head>
@@ -108,21 +133,13 @@
       5 Costly Mistakes That Could Be Destroying Your Child’s Confidence
     </div>
     <div class="promo-sub">
-      Welcome to Bermuda Small Circle Jujitsu, where we build unstoppable confidence in every student.
+      Concerned about your child's self-esteem? <br>
+      Discover the hidden mistakes most parents make <b>—and how you can help your child unlock UNSTOPPABLE confidence!</b>
       <br><br>
-      Parents: If you'd like <b>our free guide</b> to avoid these mistakes and help your child thrive, simply leave your name and email below and we'll send it to you right away!
+      Get our powerful free guide now. Enter your info and we’ll send it to your inbox instantly!
     </div>
-    <!-- Happy Mom & Child Illustration -->
-    <img class="promo-img"
-      src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80"
-      alt="Happy mom with child smiling"
-      width="400"
-      height="267"
-      loading="lazy"
-    />
-    <!-- Or Use AI Image:
-      ![HAPPY_MOM_CHILD](GENERATED_IMAGE_URL_HERE?ar=landscape)
-    -->
+    <!-- Custom AI-Generated Image of Mixed-Race Child in Gi -->
+    ![A smiling mixed-race child wearing a jujitsu Gi, vibrant, positive, inviting, with a clean background, shot as a high-quality professional photo for a website hero banner](1746645568.jpg?ar=landscape)
 
     <!-- Contact Form -->
     <form action="https://formsubmit.co/bermudajujitsu@hotmail.com" method="POST">
@@ -135,9 +152,9 @@
       <input type="email" id="email" name="Email" required placeholder="you@email.com">
       <button type="submit">Get The Free Guide</button>
     </form>
-    <div style="margin-top:0.8em;text-align:center;">
-      Or <a href="https://wa.me/14415188989" target="_blank" style="color:#fff;background:#25D366;padding:6px 16px;border-radius:5px;text-decoration:none;display:inline-block;">WhatsApp Us Instantly</a>
-    </div>
+    <a href="https://wa.me/14415188989" target="_blank" class="cta-whatsapp">
+      Or Message Us Instantly on WhatsApp
+    </a>
   </div>
   <div class="footer">
     &copy; 2024 Bermuda Small Circle Jujitsu &bull;
